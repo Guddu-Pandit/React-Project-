@@ -9,7 +9,6 @@ const LandingPage = () => {
           consequuntur fugiat quis, veritatis earum laudantium exercitationem
           praesentium?
         </p>
-        
         <div className="BtnMain">
         <button>Book now</button>
         <button className="btn">Category</button>
