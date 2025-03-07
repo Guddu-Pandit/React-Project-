@@ -1,0 +1,14 @@
+.heading {
+  margin-top: 20px;
+  text-transform: uppercase;
+  max-width: 1024px;
+}
+.heading h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 800;
+}
+.heading p {
+  text-transform: uppercase;
+  font-weight: 400;
+}
