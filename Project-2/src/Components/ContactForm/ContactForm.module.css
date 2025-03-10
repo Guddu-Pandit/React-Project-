@@ -26,6 +26,11 @@
     width: 100%;
     position:relative;
 }
+
+.form_control textarea{
+    padding: 10px 10px;
+}
+
 .form_control input{
     height: 40px;
     padding: 0 10px;
@@ -37,4 +42,7 @@
     left: 10px;
     background-color: white;
     padding: 0 10px;
+}
+.contact_image img{
+    width: 100vh;
 }

@@ -3,10 +3,23 @@ import Button from "../Button/Button"
 import { MdMessage } from "react-icons/md";
 import { MdCall } from "react-icons/md";
 import { MdMail } from "react-icons/md";
-
-
+import { useState } from "react";
+  
 
 const ContactForm = () => {
+    const [name, setName] = useState("Guddu");
+    const [email, setEmail] = useState("xyz@gmail.com");
+    const [text, setText] = useState("hi there");
+
+
+    const onSubmit = (event) => {
+        event.preventDefault();
+        
+        setName(event.target[0].value);
+        setEmail(event.target[1].value);
+        setText(event.target[2].value);
+    };
+
   return (
     <section className={styles.container}>
         <div className={styles.contact_form}>
@@ -27,7 +40,7 @@ const ContactForm = () => {
             />
 
 
-            <form >
+            <form onSubmit={onSubmit}>
                 <div className={styles.form_control}>
                 <label htmlFor="name">Name</label>
                 <input type="text"  name="name"/>
@@ -47,10 +60,11 @@ const ContactForm = () => {
                 }}>
                 <Button text="Submit Now "/>
                 </div>
+                <div>{name + " / " + email + " / " + text}</div>
             </form>
         </div>
         <div className={styles.contact_image}>
-            <img src="/Images/contact_us.svg" alt="ContactImage" />
+            <img src="/Images/contact.svg" alt="" />
         </div>
     </section>
   )
