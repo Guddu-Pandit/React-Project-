@@ -1,0 +1,55 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    z-index: 99;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.navigation div img{
+    z-index: 999;
+    height: 5rem;
+    background-color: white;
+    padding: 0rem 2rem;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    gap: .7rem;
+    align-items: center;
+    justify-content: center;
+}
+.navigation ul li{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.navigation ul li:hover{
+    text-decoration: underline solid rgb(255, 255, 255);
+    
+}
+.active{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 12px;
+    /* font-weight: 500; */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.active:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: all 1s ease;
+}
