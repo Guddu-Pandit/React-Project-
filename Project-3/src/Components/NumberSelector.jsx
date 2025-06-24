@@ -49,6 +49,7 @@ p{
 const Box = styled.div`
 height: 72px;
 width: 72px;
+cursor: pointer;
 border: 1px solid black;
 display: grid;
 place-items: center;
